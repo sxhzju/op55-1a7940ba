@@ -1,0 +1,15 @@
+{
+  "name": "pipa-renjian-qingliang",
+  "version": "1.0.0",
+  "private": true,
+  "description": "人间清又凉 — a hand-drawn sketchbook motion piece for a pipa track, rendered frame by frame in Chrome.",
+  "type": "module",
+  "scripts": {
+    "render": "node render.mjs",
+    "frames": "node tools/frames.mjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer-core": "25.12.0"
+  }
+}

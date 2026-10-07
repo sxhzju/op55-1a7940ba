@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>人间清又凉</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #111; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1080" height="1440"></canvas>
+<script type="module">
+  import { init, renderFrame, FRAMES } from './film.js';
+  window.__ready = (async () => {
+    await init(document.getElementById('c'));
+    window.renderFrame = renderFrame;
+    window.FRAMES = FRAMES;
+    return true;
+  })();
+</script>
+</body>
+</html>
